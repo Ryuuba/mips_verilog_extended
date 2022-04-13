@@ -1,0 +1,43 @@
+201d00fc      # addi  $sp, $zero, 252  initializes the stack pointer
+afbe0000      # sw    $fp, 0($sp)
+23bdfffc      # addi  $sp, $sp, -4
+001df025      # or    $fp, $zero, $sp 
+23bdfffc      # addi  $sp, $sp, -4
+20040005      # addi  $a0, $zero, 5 
+0c00000c      # jal   factorial  (12*4)
+00024025      # or    $t0, $zero, $v0 
+afc8fffc      # sw    $t0, -4($fp)
+23bd0008      # addi  $sp, $sp, 8
+8fbe0000      # lw    $fp, 0($sp) 
+0810000b      # j     END 
+afbe0000      # sw    $fp, 0($sp)
+23bdfffc      # addi  $sp, $sp, -4 
+001df025      # or    $fp, $zero, $sp
+23bdfff8      # addi  $sp, $sp, -8
+afdf0000      # sw    $ra, 0($fp)
+afd0fffc      # sw    $s0, -4($fp)
+00048025      # or    $s0, $zero, $a0
+2201ffff      # addi  $at, $s0, -1
+28210001      # slti  $at, $at, 1
+14200006      # bne   $at, $zero, L1
+2204ffff      # addi  $a0, $s0, -1
+0c000030      # jal   factorial
+00102025      # or    $a0, $zero, $s0
+00022825      # or    $a1, $zero, $v0
+0c000088      # jal   mult_u
+08000074      # j L2 <--
+20020001      # addi  $v0, $zero, 1
+8fdf0000      # lw    $ra, 0($fp)
+8fd0fffc      # lw    $s0, -4($fp)
+23bd000c      # addi  $sp, $sp, 12
+8fbe0000      # lw    $fp, 0($sp)
+03e00008      # jr    $ra
+00004024      # and   $t0, $0, $0
+00004824      # and   $t1, $0, $0
+0800009c      # j     LF0
+01044020      # add   $t0, $t0, $a0
+21290001      # addi  $t1, $t1, 1
+0125082a      # slt   $at, $t1, $a1
+1420fffc      # bne   $at, $zero, LF1
+00081025      # or    $v0, $zero, $t0
+03e00008      # jr    $ra

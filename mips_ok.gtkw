@@ -1,0 +1,67 @@
+[*]
+[*] GTKWave Analyzer v3.3.95 (w)1999-2018 BSI
+[*] Mon Nov 18 09:02:31 2019
+[*]
+[dumpfile] "C:\Users\Geo\OneDrive - xanum.uam.mx\Documentos\Teaching\Computer_Arquitecture\code\mips\mips.vcd"
+[dumpfile_mtime] "Mon Nov 18 08:58:07 2019"
+[dumpfile_size] 535970
+[savefile] "C:\Users\Geo\OneDrive - xanum.uam.mx\Documentos\Teaching\Computer_Arquitecture\code\mips\mips_ok.gtkw"
+[timestart] 673320
+[size] 1366 698
+[pos] -1 -1
+*-11.541042 682150 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] testbench.
+[treeopen] testbench.reg_file.genblk3[10].
+[treeopen] testbench.reg_file.genblk3[17].
+[treeopen] testbench.reg_file.genblk3[1].
+[treeopen] testbench.reg_file.genblk3[31].
+[treeopen] testbench.reg_file.genblk3[4].
+[treeopen] testbench.reg_file.genblk3[5].
+[treeopen] testbench.reg_file.genblk3[6].
+[treeopen] testbench.reg_file.genblk3[9].
+[sst_width] 197
+[signals_width] 270
+[sst_expanded] 1
+[sst_vpaned_height] 186
+@28
+testbench.clk
+@24
+testbench.next_address[31:0]
+@22
+testbench.instruction[31:0]
+@c00022
+testbench.control_word[13:0]
+@28
+(0)testbench.control_word[13:0]
+(1)testbench.control_word[13:0]
+(2)testbench.control_word[13:0]
+(3)testbench.control_word[13:0]
+(4)testbench.control_word[13:0]
+(5)testbench.control_word[13:0]
+(6)testbench.control_word[13:0]
+(7)testbench.control_word[13:0]
+(8)testbench.control_word[13:0]
+(9)testbench.control_word[13:0]
+(10)testbench.control_word[13:0]
+(11)testbench.control_word[13:0]
+(12)testbench.control_word[13:0]
+(13)testbench.control_word[13:0]
+@1401200
+-group_end
+@24
++{pc} testbench.pc.state[31:0]
+@22
++{$at} testbench.reg_file.genblk3[1].reg_u.state[31:0]
++{$a0} testbench.reg_file.genblk3[4].reg_u.state[31:0]
++{$a1} testbench.reg_file.genblk3[5].reg_u.state[31:0]
++{$a2} testbench.reg_file.genblk3[6].reg_u.state[31:0]
++{$s1} testbench.reg_file.genblk3[17].reg_u.state[31:0]
++{$t1} testbench.reg_file.genblk3[9].reg_u.state[31:0]
++{$t2} testbench.reg_file.genblk3[10].reg_u.state[31:0]
++{$ra} testbench.reg_file.genblk3[31].reg_u.state[31:0]
+testbench.pc4[31:0]
+testbench.mux_data_in[31:0]
+@23
+testbench.data_memory.data_in[31:0]
+[pattern_trace] 1
+[pattern_trace] 0

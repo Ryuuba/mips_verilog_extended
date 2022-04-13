@@ -1,0 +1,10 @@
+{
+  "editor.fontSize": 14,
+  "verilog.linting.linter": "iverilog",
+  "verilog.logging.enabled": true,
+  "svg.preview.background": "custom",
+  "editor.rulers": [
+    80
+  ],
+  "editor.fontLigatures": false
+}
